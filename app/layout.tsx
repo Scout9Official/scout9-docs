@@ -1,4 +1,5 @@
 import { Providers } from '@/app/providers';
+import S9Navbar from '@/components/navbar/S9Navbar';
 import { siteConfig } from '@/config';
 import clsx from 'clsx';
 import type { Metadata } from 'next';
@@ -44,6 +45,7 @@ export default function RootLayout({
       )}
     >
     <Providers themeProps={{attribute: 'class', defaultTheme: 'light'}}>
+      <S9Navbar/>
       {children}
     </Providers>
     </body>

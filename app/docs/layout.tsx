@@ -5,7 +5,7 @@ import { ReactNode } from 'react';
 
 export default async function DocsLayout({children,}: { children: ReactNode; }) {
   return (
-    <SidebarLayout id="ids" items={docManifest.items}>
+    <SidebarLayout id="ids" items={docManifest.items} showQuickSearch={true}>
       {children}
     </SidebarLayout>
   );

@@ -27,6 +27,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 * [Algolia](https://www.algolia.com/doc/guides/building-search-ui/getting-started/react/): Search Engine (for documentation search)
 
 ## Tasks
-* [ ]: Improve documentation style, see `./app/providers` `getComponents` to see how styles are being rendered with MDX. Use [this](https://platform.openai.com/docs/guides/speech-to-text/quickstart) as a style guide.
-* [ ]: Add search to documentation, use Algolia to index documentation pages and add a search bar to the documentation page. Use [this](https://platform.openai.com/docs/guides/speech-to-text/quickstart) as a reference.
+* [ ] Improve documentation style, see `./app/providers` `getComponents` to see how styles are being rendered with MDX. Use [this](https://platform.openai.com/docs/guides/speech-to-text/quickstart) as a style guide.
+* [ ] Add search to documentation, use Algolia to index documentation pages and add a search bar to the documentation page. Use [this](https://platform.openai.com/docs/guides/speech-to-text/quickstart) as a reference.
 

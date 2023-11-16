@@ -26,7 +26,8 @@ export const docManifest: IManifest = {
               'id': 'section-2-famous-random-experiments',
               'name': 'Section 2',
               href: '/docs/get-started/setup'
-            }
+            },
+
           ]
         }
       ]
@@ -43,14 +44,44 @@ export const docManifest: IManifest = {
           'items': [
             {
               'id': 'section1',
-              'name': 'Section 1',
+              'name': 'Register Yourself as an Agent',
               href: '/docs/guides/setup',
             },
             {
               'id': 'section2',
-              'name': 'Section 2',
+              'name': 'Register Customers',
               href: '/docs/guides/setup',
-            }
+            },
+            {
+              'id': 'section3',
+              'name': 'Initiate a Conversation',
+              href: '/docs/guides/setup',
+            },
+            {
+              'id': 'section4',
+              'name': 'Test Your Conversation',
+              href: '/docs/guides/setup',
+            },
+            {
+              'id': 'section5',
+              'name': 'View Your Conversation',
+              href: '/docs/guides/setup',
+            },
+            {
+              'id': 'section6',
+              'name': 'Schedule a Conversation',
+              href: '/docs/guides/setup',
+            },
+            {
+              'id': 'section7',
+              'name': 'Define Workflows',
+              href: '/docs/guides/setup',
+            },
+            {
+              'id': 'section8',
+              'name': 'Respond to a Customer',
+              href: '/docs/guides/setup',
+            },
           ]
         }
       ]

@@ -1,9 +1,12 @@
 /** @type {import('next').NextConfig} */
+import remarkGfm from 'remark-gfm';
+import rehypeSlug from 'rehype-slug';
+import createMdx from '@next/mdx'
 
 const nextConfig = {
   experimental: {
     serverActions: true,
-    mdxRs: true // For /docs
+    mdxRs: false // For /docs
   },
   images: {
     domains: [
@@ -12,7 +15,7 @@ const nextConfig = {
     ]
   },
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'], // For /docs
-  redirects: async () => {
+  redirects: () => {
     return [
       {
         source: '/docs',
@@ -23,7 +26,12 @@ const nextConfig = {
   }
 };
 
-const withMDX = require('@next/mdx')({ // Used to conver docs to MDX
-  providerImportSource: '@mdx-js/react'
+const withMDX = createMdx({
+  options: {
+    remarkPlugins: [remarkGfm],
+    rehypePlugins: [rehypeSlug],
+    //providerImportSource: '@mdx-js/react'
+  },// Used to convert docs to MDX
+
 });
-module.exports = withMDX(nextConfig);
+export default withMDX(nextConfig);

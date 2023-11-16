@@ -20,7 +20,7 @@ export interface IS9Navbar extends NavbarProps {
 }
 
 export default function S9Navbar(props: IS9Navbar) {
-  const {left, right, center, ...navbarProps} = props;
+  const { left, right, center, ...navbarProps } = props;
 
   return (
     <Navbar maxWidth="xl" position="sticky" {...(navbarProps || {})}>
@@ -30,7 +30,7 @@ export default function S9Navbar(props: IS9Navbar) {
         {left ? left :
           <NavbarBrand as="li" className="gap-3 max-w-fit">
             <Link className="flex justify-start items-center gap-1" href="/">
-              <Image src="/SVG/Logo.svg" width="120" height="60" alt="Scout9"/>
+              <Image src="/SVG/Logo.svg" width="120" height="60" alt="Scout9" />
             </Link>
           </NavbarBrand>
         }
@@ -62,7 +62,7 @@ export default function S9Navbar(props: IS9Navbar) {
 
       {/*Mobile only right side */}
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-        {right ? right : <NavbarMenuToggle/>}
+        {right ? right : <NavbarMenuToggle />}
       </NavbarContent>
 
       {/*Mobile only right side, hidden if right slot is provided */}

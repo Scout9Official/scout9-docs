@@ -1,0 +1,47 @@
+[
+    {
+        "id": "Setup",
+        "objectID": 1,
+        "name": "Getting Started"
+    },
+    {
+        "id": "Step-1:-Register-yourself-as-an-agent",
+        "objectID": 2,
+        "name": "Register Yourself as an Agent"
+    },
+    {
+        "id": "Step-2:-Register-customers",
+        "objectID": 3,
+        "name": "Register Customers"
+    },
+    {
+        "id": "Step-3:-Initiate-a-conversation",
+        "objectID": 4,
+        "name": "Initiate a Conversation"
+    },
+    {
+        "id": "Step-4:-Test-your-conversation",
+        "objectID": 5,
+        "name": "Test Your Conversation"
+    },
+    {
+        "id": "Step-5:-View-your-conversation",
+        "objectID": 6,
+        "name": "View Your Conversation"
+    },
+    {
+        "id": "Schedule-a-conversation",
+        "objectID": 7,
+        "name": "Schedule a Conversation"
+    },
+    {
+        "id": "Define-workflows",
+        "objectID": 8,
+        "name": "Define Workflows"
+    },
+    {
+        "id": "Respond-to-a-customer",
+        "objectID": 9,
+        "name": "Respond to a Customer"
+    }
+]

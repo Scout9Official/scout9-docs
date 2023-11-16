@@ -2,6 +2,7 @@ import { ISidebarItem } from '@/components/sidebar-layout/props';
 import { Input } from '@nextui-org/input';
 import { Kbd } from '@nextui-org/kbd';
 import { DOMAttributes } from 'react';
+import AlgoliaSearchInput from '../algolia-search/AlgoliaSearchInput';
 
 export interface ISidebarLayoutMenu {
   showQuickSearch?: boolean;
@@ -11,18 +12,14 @@ export interface ISidebarLayoutMenu {
 }
 
 export default function SidebarLayoutMenu(props: ISidebarLayoutMenu) {
-  const {showQuickSearch, items, pathName, linkProps} = props;
+  const { showQuickSearch, items, pathName, linkProps } = props;
   return (
     <nav className="lg:text-sm lg:leading-6 relative">
       {showQuickSearch && <div className="sticky top-0 -ml-0.5 pointer-events-none">
-        <div className="h-10 bg-white dark:bg-slate-900"/>
+        <div className="h-10 bg-white dark:bg-slate-900" />
         <div className="bg-white dark:bg-slate-900 relative pointer-events-auto">
-          <Input
-            placeholder="Quick Search"
-            endContent={<Kbd>⌘K</Kbd>}
-            // startContent={<Search/>}
-          />
-          <div className="h-8 bg-gradient-to-b from-white dark:from-slate-900"/>
+          <AlgoliaSearchInput />
+          <div className="h-8 bg-gradient-to-b from-white dark:from-slate-900" />
         </div>
       </div>}
 

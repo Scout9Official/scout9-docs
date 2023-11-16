@@ -20,8 +20,8 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   themeColor: [
-    {media: '(prefers-color-scheme: light)', color: 'white'},
-    {media: '(prefers-color-scheme: dark)', color: 'black'},
+    { media: '(prefers-color-scheme: light)', color: 'white' },
+    { media: '(prefers-color-scheme: dark)', color: 'black' },
   ],
   icons: {
     // icon: "/favicon.ico",
@@ -31,24 +31,25 @@ export const metadata: Metadata = {
   },
 };
 
+
 export default function RootLayout({
-                                     children,
-                                   }: {
+  children,
+}: {
   children: ReactNode
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-    <body
-      className={clsx(
-        'min-h-screen bg-background font-sans antialiased',
-        fontSans.variable
-      )}
-    >
-    <Providers themeProps={{attribute: 'class', defaultTheme: 'light'}}>
-      <S9Navbar/>
-      {children}
-    </Providers>
-    </body>
+      <body
+        className={clsx(
+          'min-h-screen bg-background font-sans antialiased',
+          fontSans.variable
+        )}
+      >
+        <Providers themeProps={{ attribute: 'class', defaultTheme: 'light' }}>
+          <S9Navbar />
+          {children}
+        </Providers>
+      </body>
     </html>
   );
 }
